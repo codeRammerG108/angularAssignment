@@ -1,0 +1,16 @@
+<div class="product-card">
+    <img class="product-image" src="{{productImage}}" alt="Product Image">
+    <div class="product-name">{{productName}}</div>
+    <div class="product-price">₹{{productPrice}}</div>
+    <div class="product-description">
+        {{productDescription}}
+    </div>
+    <div class="add-to-cart">
+        <div class="quantity">
+            <button (click)="minus()">-</button>
+            <span>{{productQuan}}</span>
+            <button (click)="plus()">+</button>
+        </div>
+        <button (click)="addToCart()" >{{buttonText}}</button>
+    </div>
+</div>

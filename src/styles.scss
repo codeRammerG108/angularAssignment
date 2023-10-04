@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    animation: gradientAnimation 30s linear infinite; /* Adjust the duration as needed */
+    background: linear-gradient(90deg, #040D12, #e7e559, #9ec200, #93B1A6, #9ec200, #e7e559, #040D12);
+    background-size: 300% 100%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
